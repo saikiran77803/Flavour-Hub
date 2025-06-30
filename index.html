@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlavorHub - Reserve Your Table</title>
+  <style>
+    body {
+      font-family: 'Verdana', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff3e0;
+      color: #3e2723;
+    }
+    header {
+      background-color: #ff6f00;
+      padding: 30px;
+      text-align: center;
+      color: white;
+    }
+    nav {
+      background-color: #ffb74d;
+      text-align: center;
+      padding: 15px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #3e2723;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .reservation-form {
+      background-color: #ffe0b2;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .reservation-form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    .reservation-form input, .reservation-form select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .reservation-form button {
+      background-color: #ff6f00;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .reservation-form button:hover {
+      background-color: #e65100;
+    }
+    footer {
+      background-color: #3e2723;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FlavorHub</h1>
+    <p>Book your table and taste the world</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#reserve">Reservation</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to FlavorHub</h2>
+    <p>At FlavorHub, we believe every meal should be a celebration. From local favorites to global cuisines, our chefs craft every dish with passion and precision. Reserve a table and treat yourself to a dining experience like no other.</p>
+  </section>
+
+  <section id="reserve">
+    <h2>Reserve Your Table</h2>
+    <form class="reservation-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="date">Reservation Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required />
+
+      <label for="guests">Number of Guests:</label>
+      <select id="guests" name="guests">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5+">5+</option>
+      </select>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <section id="menu">
+    <h2>Popular Dishes</h2>
+    <ul>
+      <li>Grilled Paneer Tikka</li>
+      <li>Mexican Burrito Bowl</li>
+      <li>Italian Margherita Pizza</li>
+      <li>Classic Tandoori Chicken</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: book@flavorhub.com</p>
+    <p>Phone: +91 12345 67890</p>
+    <p>Address: 12 Food Lane, Gourmet City, India</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FlavorHub. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
